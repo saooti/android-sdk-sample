@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
 
         Saooti.init(this)
         Saooti.setApiUrl("https://api.octopus.saooti.com")
-        Saooti.setOrganizationId("<organizationd_id>")
+        Saooti.setOrganizationId("<organization_id>")
 
         SaootiUI.bind()
 
