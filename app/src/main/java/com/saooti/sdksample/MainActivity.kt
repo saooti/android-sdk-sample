@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
 
         Saooti.init(this)
         Saooti.setApiUrl("https://api.octopus.saooti.com")
-        Saooti.setOrganizationId("<organization_id>")
+        Saooti.setOrganizationId("<organizationd_id>")
 
         SaootiUI.bind()
 
@@ -39,21 +39,5 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SDKSampleTheme {
-        Greeting("Android")
     }
 }
