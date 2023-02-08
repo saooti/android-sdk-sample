@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        maven { url 'https://jitpack.io' }
+
+        maven {
+            name = 'GitHubPackages'
+            url = 'https://maven.pkg.github.com/saooti/android-sdk-ui'
+            credentials {
+                username = '<github_username>'
+                password = '<github_token>'
+            }
+        }
+    }
+}
+rootProject.name = "SDK Sample"
+include ':app'
