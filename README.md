@@ -1,5 +1,7 @@
 # Android SDK Sample
 
+Sample representing Saooti SDK: https://github.com/saooti/android-sdk-ui
+
 ## Setup
 
 You need to have access to:
@@ -8,8 +10,7 @@ You need to have access to:
 
 Once you have permissions - generate a new classic token https://github.com/settings/tokens with `read:packages` permission for your account.
 
-Add your credentials to `settings.gradle`.
+Set your credentials (GiHub username and generated token) to `settings.gradle`.
 
-Add your organization id to `MainActivity.kt` at `Saooti.setOrganizationId("<organization_id>")`.
+Set your organisation id to `MainActivity.kt` at `Saooti.setOrganisationId("<organisation_id>")`.
 
-SDK: https://github.com/saooti/android-sdk-ui
