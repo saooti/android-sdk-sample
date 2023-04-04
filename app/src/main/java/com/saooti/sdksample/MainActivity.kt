@@ -17,9 +17,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //????
+
         Saooti.init(this)
         Saooti.setApiUrl("https://api.octopus.saooti.com")
-        Saooti.setOrganizationId("<organization_id>")
+        Saooti.setOrganisationId("<organisation_id>")
 
         SaootiUI.bind()
 
