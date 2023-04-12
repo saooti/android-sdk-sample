@@ -17,6 +17,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //????
+
         Saooti.init(this)
         Saooti.setApiUrl("https://api.octopus.saooti.com")
         Saooti.setOrganisationId("<organisation_id>")
@@ -25,7 +27,6 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             SDKSampleTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
