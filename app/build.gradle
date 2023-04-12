@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.saooti.sdksample"
-        minSdk 26
+        minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -48,9 +48,9 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
-    implementation 'androidx.activity:activity-compose:1.6.1'
+    implementation 'androidx.core:core-ktx:1.10.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation 'androidx.activity:activity-compose:1.7.0'
     implementation platform('androidx.compose:compose-bom:2022.10.00')
     implementation 'androidx.compose.ui:ui'
     implementation 'androidx.compose.ui:ui-graphics'
@@ -64,5 +64,5 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
-    implementation 'com.saooti.sdk:ui:0.1.214'
+    implementation 'com.saooti.sdk:ui:0.1.222'
 }
