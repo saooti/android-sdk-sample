@@ -19,14 +19,18 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.saooti.core.Saooti
 import com.saooti.core.playing.models.PlayingStatus
 import com.saooti.sdksample.ui.theme.SDKSampleTheme
 import com.saooti.ui.SaootiUI
 import com.saooti.ui.theme.SaootiUITheme
+import com.saooti.ui.theme.Theme
+import com.saooti.ui.theme.ThemeModeValue
 import com.saooti.ui.ui.bound.navigation.models.NavbarConfig
-import com.saooti.ui.ui.bound.navigation.models.NavbarModeTitle
 import com.saooti.ui.ui.bound.ui.views.UI
 import com.saooti.ui.ui.elements.miniplayer.views.MiniPlayerView
 import kotlinx.coroutines.flow.filter
@@ -42,6 +46,19 @@ class MainActivity : ComponentActivity() {
         Saooti.setOrganisationId("<organisation_id>")
 
         SaootiUI.bind()
+
+        // Set custom navbar home title
+        Theme.NavBarView.Home.view = ThemeModeValue(
+            default = {
+                Text(
+                    "Sample",
+                    style = TextStyle(
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                )
+            }
+        )
 
         setContent {
             SDKSampleTheme {
@@ -120,7 +137,6 @@ fun MainView() {
             SaootiUITheme {
                 UI(
                     navbarConfig = NavbarConfig(
-                        mode = NavbarModeTitle("Sample"),
                         onCloseButtonClick = {
                             isSDKUIVisible.value = false
                         }
