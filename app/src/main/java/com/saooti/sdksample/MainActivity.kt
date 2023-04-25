@@ -48,7 +48,6 @@ class MainActivity : ComponentActivity() {
         SaootiUI.bind()
 
         // Set custom navbar home title
-        Theme.NavBarView.
         Theme.NavBarView.Home.view = ThemeModeValue(
             default = {
                 Text(
