@@ -105,7 +105,7 @@ fun MainView() {
 
                 //// Mini Player ////
 
-                // You can keep mini player visible when SDK UI is not visible
+                // You can keep mini player visible outside of main SDK UI
 
                 MiniPlayerView(
                     Modifier
