@@ -27,12 +27,12 @@ import com.saooti.core.Saooti
 import com.saooti.core.playing.models.PlayingStatus
 import com.saooti.sdksample.ui.theme.SDKSampleTheme
 import com.saooti.ui.SaootiUI
+import com.saooti.ui.elements.miniplayer.views.MiniPlayerView
+import com.saooti.ui.elements.navigation.models.NavbarConfig
+import com.saooti.ui.elements.ui.views.UI
 import com.saooti.ui.theme.SaootiUITheme
 import com.saooti.ui.theme.Theme
 import com.saooti.ui.theme.ThemeModeValue
-import com.saooti.ui.ui.bound.navigation.models.NavbarConfig
-import com.saooti.ui.ui.bound.ui.views.UI
-import com.saooti.ui.ui.elements.miniplayer.views.MiniPlayerView
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.filterNotNull
 
@@ -124,7 +124,7 @@ fun MainView() {
         AnimatedVisibility(
             isSDKUIVisible.value,
             modifier = Modifier.fillMaxSize(),
-            enter = slideInVertically (
+            enter = slideInVertically(
                 initialOffsetY = { it }
             ),
             exit = slideOutVertically(
