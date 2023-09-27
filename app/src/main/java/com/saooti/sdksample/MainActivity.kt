@@ -44,7 +44,6 @@ class MainActivity : ComponentActivity() {
 
         Saooti.setApiUrl("https://api.octopus.saooti.com")
         Saooti.setOrganisationId("<organisation_id>")
-
         SaootiUI.bind()
 
         // Set custom navbar home title

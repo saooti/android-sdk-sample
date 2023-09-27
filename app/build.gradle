@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.saooti.sdksample'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.saooti.sdksample"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 3
         versionName "1.0"
 
@@ -22,17 +22,17 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.debug
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
     buildFeatures {
         compose true
@@ -65,5 +65,5 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
-    implementation 'com.saooti.sdk:ui:0.2.7'
+    implementation 'com.saooti.sdk:ui:0.3.1'
 }
