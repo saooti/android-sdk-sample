@@ -40,10 +40,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Saooti.init(this)
-
-        Saooti.setApiUrl("https://api.octopus.saooti.com")
-        Saooti.setOrganisationId("<organisation_id>")
         SaootiUI.bind()
 
         // Set custom navbar home title
