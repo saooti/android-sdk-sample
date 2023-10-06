@@ -12,4 +12,4 @@ Once you have permissions - generate a new classic token https://github.com/sett
 
 Set your credentials (GiHub username and generated token) to `settings.gradle`.
 
-Set your organisation id to `MainActivity.kt` at `Saooti.setOrganisationId("<organisation_id>")`.
+Set your organisation id in `App.kt` at `Saooti.setOrganisationId("<organisation_id>")`.
