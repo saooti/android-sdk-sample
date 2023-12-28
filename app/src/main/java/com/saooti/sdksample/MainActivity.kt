@@ -77,15 +77,12 @@ class MainActivity : ComponentActivity() {
         Theme.Podcasts.HomeView.PodcastsView.isGroupByDateEnabled = false
 
         setContent {
-
-            setContent {
-                SDKSampleTheme {
-                    Surface(
-                        modifier = Modifier.fillMaxSize(),
-                        color = MaterialTheme.colorScheme.background
-                    ) {
-                        MainView()
-                    }
+            SDKSampleTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    MainView()
                 }
             }
         }
