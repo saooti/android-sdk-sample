@@ -2,6 +2,7 @@ package com.saooti.sdksample
 
 import android.app.Application
 import com.saooti.core.Saooti
+import com.saooti.core.session.Platform
 
 class App: Application() {
 
@@ -10,8 +11,6 @@ class App: Application() {
 
         Saooti.init(applicationContext)
 
-        Saooti.setApiUrl("https://api.octopus.saooti.com")
-
-        Saooti.setOrganisationId("<organisation_id>")
+        Saooti.setOrganisationId("<organization_id>>")
     }
 }
