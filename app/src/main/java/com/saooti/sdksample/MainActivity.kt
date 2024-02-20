@@ -41,7 +41,6 @@ import androidx.compose.ui.unit.sp
 import com.saooti.core.Saooti
 import com.saooti.core.playing.models.PlayingStatus
 import com.saooti.sdksample.ui.theme.SDKSampleTheme
-import com.saooti.ui.R
 import com.saooti.ui.SaootiUI
 import com.saooti.ui.elements.broadcast.views.BroadcastHubView
 import com.saooti.ui.elements.miniplayer.views.MiniPlayerView
